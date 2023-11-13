@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" div x-data="{ open: false }">
+  <button x-on:click="open = ! open">Menu 1</button>
+
+  <div x-show="open" x-transition>
+      Chargement...
+  </div>
+</div>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
