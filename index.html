@@ -2,7 +2,7 @@
 <html lang="fr" div x-data="{ open: false }">
   <button x-on:click="open = ! open">Menu 1</button>
 
-  <div x-show="open" x-transition>
+  <div x-show="open" x-transition.duration.800ms>
       Chargement...
   </div>
 </div>
